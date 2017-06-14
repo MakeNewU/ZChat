@@ -399,7 +399,7 @@ static NSString *const NTESRecentSessionAtMark = @"NTESRecentSessionAtMark";
 {
     NSDictionary *formats  = @{
                               @(NIMLoginClientTypePC) : @"电脑",//电脑
-                              @(NIMLoginClientTypeiOS): @"苹果",//iOS
+                              @(NIMLoginClientTypeiOS): @"iPhone",//iOS
                               @(NIMLoginClientTypeAOS): @"安卓",//Android
                               @(NIMLoginClientTypeWeb): @"Web",//Web
                               @(NIMLoginClientTypeWP) : @"WP"//WP

@@ -104,7 +104,9 @@ typedef NS_ENUM(NSInteger, NTESMainTabType) {
     return items;
 }
 
-
+/**
+ *配置底部导航
+ */
 - (void)setUpSubNav{
     NSMutableArray *handleArray = [[NSMutableArray alloc] init];
     NSMutableArray *vcArray = [[NSMutableArray alloc] init];
@@ -288,7 +290,7 @@ typedef NS_ENUM(NSInteger, NTESMainTabType) {
                              },
                      @(NTESMainTabTypeSetting)     : @{
 //                             TabbarVC           : @"NTESSettingViewController",
-                             TabbarVC           : @"ProfileViewController",
+                             TabbarVC           : @"ProfileViewController",//wzteng
                              TabbarTitle        : @"我",
                              TabbarImage        : @"icon_setting_normal",
                              TabbarSelectedImage: @"icon_setting_pressed",
