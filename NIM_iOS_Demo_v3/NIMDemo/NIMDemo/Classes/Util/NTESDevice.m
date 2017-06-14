@@ -110,7 +110,7 @@
         case NTESNetworkType4G:
             return @"4G";
         default:
-            return @"WIFI";
+            return @"WiFi";//WIFI
     }
 }
 
