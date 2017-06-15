@@ -47,11 +47,10 @@
 <div>
 <img width="288" height="490" src="https://github.com/WZTENG/ZChat/blob/master/screenshots/屏幕快照 2017-06-13 下午4.42.38.png"/>
 <img width="288" height="490" src="https://github.com/WZTENG/ZChat/blob/master/screenshots/屏幕快照 2017-06-13 下午4.42.51.png"/>
-<img width="288" height="490" src="https://github.com/WZTENG/ZChat/blob/master/screenshots/屏幕快照 2017-06-13 下午4.43.42.png"/>
+<img width="288" height="490" src="https://github.com/WZTENG/ZChat/blob/master/screenshots/屏幕快照 2017-06-13 下午4.48.10.png"/>
 </div>
 <div>
 <img width="288" height="490" src="https://github.com/WZTENG/ZChat/blob/master/screenshots/屏幕快照 2017-06-13 下午4.44.37.png"/>
-<img width="288" height="490" src="https://github.com/WZTENG/ZChat/blob/master/screenshots/屏幕快照 2017-06-13 下午4.48.10.png"/>
 </div>
 
 
