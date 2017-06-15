@@ -162,7 +162,7 @@
  */
 - (void)onActionTouchGames:(id)sender{
     WebViewController *vc = [[WebViewController alloc] initWithNibName:nil bundle:nil];
-    vc.myUrl  = @"https://www.tmall.com";
+    vc.myUrl  = @"https://www.baidu.com";
     vc.myTitle = @"游戏";
     [self.navigationController pushViewController:vc animated:YES];
 }

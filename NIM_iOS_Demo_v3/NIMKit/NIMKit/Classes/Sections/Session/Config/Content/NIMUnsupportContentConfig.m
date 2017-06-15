@@ -12,7 +12,7 @@
 @implementation NIMUnsupportContentConfig
 - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
 {
-    return CGSizeMake(100.f, 40.f);
+    return CGSizeMake(100.f, 22.f);//40
 }
 
 - (NSString *)cellContent:(NIMMessage *)message
