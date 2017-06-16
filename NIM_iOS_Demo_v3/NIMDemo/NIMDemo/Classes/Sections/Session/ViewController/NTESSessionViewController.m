@@ -83,7 +83,6 @@ NIMEventSubscribeManagerDelegate>
         _titleTimer = [[NTESTimerHolder alloc] init];
         [[NIMSDK sharedSDK].systemNotificationManager addDelegate:self];
     }
-
     if ([[NTESBundleSetting sharedConfig] showFps])
     {
         self.fpsLabel = [[NTESFPSLabel alloc] initWithFrame:CGRectZero];
