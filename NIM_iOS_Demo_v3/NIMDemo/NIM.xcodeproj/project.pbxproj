@@ -1621,9 +1621,9 @@
 		AE5882DD1A6F47E10070536A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = NTES;
+				CLASSPREFIX = WZT;
 				LastUpgradeCheck = 0810;
-				ORGANIZATIONNAME = Netease;
+				ORGANIZATIONNAME = WZTENG;
 				TargetAttributes = {
 					AE5882E41A6F47E10070536A = {
 						CreatedOnToolsVersion = 6.1;
