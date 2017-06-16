@@ -68,7 +68,7 @@
                           RowContent :@[
                                   @{
                                       ExtraInfo     : uid.length ? uid : [NSNull null],
-                                      CellClass     : @"NTESSettingPortraitCell",
+                                      CellClass     : @"NTESSettingPortraitInfoCell",
                                       RowHeight     : @(100),
                                       CellAction    : @"onActionTouchPortrait:",
                                       ShowAccessory : @(YES),

@@ -1,18 +1,18 @@
 //
-//  NTESSettingPortraitCell.m
+//  NTESSettingPortraitInfoCell.m
 //  NIM
 //
-//  Created by chris on 15/6/26.
-//  Copyright © 2015年 Netease. All rights reserved.
+//  Created by WZTENG on 2017/6/16.
+//  Copyright © 2017年 WZTENG. All rights reserved.
 //
 
-#import "NTESSettingPortraitCell.h"
+#import "NTESSettingPortraitInfoCell.h"
 #import "NIMCommonTableData.h"
 #import "UIView+NTES.h"
 #import "NTESSessionUtil.h"
 #import "NIMAvatarImageView.h"
 
-@interface NTESSettingPortraitCell()
+@interface NTESSettingPortraitInfoCell()
 
 @property (nonatomic,strong) NIMAvatarImageView *avatar;
 
@@ -20,14 +20,16 @@
 
 @property (nonatomic,strong) UILabel *accountLabel;
 
+@property (nonatomic,strong) UIImageView *qrCodeIV;
+
 @end
 
-@implementation NTESSettingPortraitCell
+@implementation NTESSettingPortraitInfoCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        CGFloat avatarWidth = 60.f;//55.f
+        CGFloat avatarWidth = 60.f;
         _avatar = [[NIMAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, avatarWidth, avatarWidth)];
         [self addSubview:_avatar];
         _nameLabel      = [[UILabel alloc] initWithFrame:CGRectZero];
@@ -37,6 +39,13 @@
         _accountLabel.font = [UIFont systemFontOfSize:14.f];
         _accountLabel.textColor = [UIColor grayColor];
         [self addSubview:_accountLabel];
+        _qrCodeIV = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 23, 23)];
+        _qrCodeIV.image = [UIImage imageNamed:@"profile_qrcode"];
+        _qrCodeIV.userInteractionEnabled = YES;//响应触摸事件，否则不会响应
+        UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onTouchQrCode)];
+        [_qrCodeIV addGestureRecognizer:singleTap];
+
+        [self addSubview:_qrCodeIV];
     }
     return self;
 }
@@ -56,7 +65,7 @@
 }
 
 
-#define AvatarLeft 15//30
+#define AvatarLeft 15
 #define TitleAndAvatarSpacing 12
 #define TitleTop 22
 #define AccountBottom 22
@@ -69,9 +78,13 @@
     self.nameLabel.top  = TitleTop;
     self.accountLabel.left    = self.nameLabel.left;
     self.accountLabel.bottom  = self.height - AccountBottom;
+    self.qrCodeIV.left = [UIScreen mainScreen].bounds.size.width - 30 - 40;
+    self.qrCodeIV.centerY = self.height * .5f;
 }
 
-
+- (void)onTouchQrCode{
+    NSLog(@"点击二维码");
+}
 
 
 @end
