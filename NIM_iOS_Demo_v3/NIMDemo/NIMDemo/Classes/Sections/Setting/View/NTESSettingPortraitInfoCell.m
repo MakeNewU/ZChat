@@ -12,6 +12,8 @@
 #import "NTESSessionUtil.h"
 #import "NIMAvatarImageView.h"
 
+#import "QrCodeView.h"
+
 @interface NTESSettingPortraitInfoCell()
 
 @property (nonatomic,strong) NIMAvatarImageView *avatar;
@@ -20,7 +22,7 @@
 
 @property (nonatomic,strong) UILabel *accountLabel;
 
-@property (nonatomic,strong) UIImageView *qrCodeIV;
+@property (nonatomic,strong) UIImageView *qrCodeImage;
 
 @end
 
@@ -39,13 +41,13 @@
         _accountLabel.font = [UIFont systemFontOfSize:14.f];
         _accountLabel.textColor = [UIColor grayColor];
         [self addSubview:_accountLabel];
-        _qrCodeIV = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 23, 23)];
-        _qrCodeIV.image = [UIImage imageNamed:@"profile_qrcode"];
-        _qrCodeIV.userInteractionEnabled = YES;//响应触摸事件，否则不会响应
+        _qrCodeImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 23, 23)];
+        _qrCodeImage.image = [UIImage imageNamed:@"profile_qrcode"];
+        _qrCodeImage.userInteractionEnabled = YES;//响应触摸事件，否则不会响应
         UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onTouchQrCode)];
-        [_qrCodeIV addGestureRecognizer:singleTap];
+        [_qrCodeImage addGestureRecognizer:singleTap];
 
-        [self addSubview:_qrCodeIV];
+        [self addSubview:_qrCodeImage];
     }
     return self;
 }
@@ -78,12 +80,17 @@
     self.nameLabel.top  = TitleTop;
     self.accountLabel.left    = self.nameLabel.left;
     self.accountLabel.bottom  = self.height - AccountBottom;
-    self.qrCodeIV.left = [UIScreen mainScreen].bounds.size.width - 30 - 40;
-    self.qrCodeIV.centerY = self.height * .5f;
+    self.qrCodeImage.right = [UIScreen mainScreen].bounds.size.width - 40;
+    self.qrCodeImage.centerY = self.height * .5f;
 }
 
 - (void)onTouchQrCode{
-    NSLog(@"点击二维码");
+//    NSLog(@"点击二维码");
+    QrCodeView *qrCodeView = [[QrCodeView alloc] initWithTitle:@"自定义View" message:@"这里是要弹出二维码的窗口" sureBtn:@"确认" cancleBtn:@"取消"];
+    qrCodeView.resultIndex = ^(NSInteger index){
+        //回调---处理一系列动作
+    };
+    [qrCodeView showXLAlertView];
 }
 
 

@@ -14,6 +14,7 @@
 		5FB89A041EE794C000485DF3 /* FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB89A021EE794C000485DF3 /* FindViewController.m */; };
 		5FB89A051EE794C000485DF3 /* FindViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FB89A031EE794C000485DF3 /* FindViewController.xib */; };
 		5FC8FC101EF37A1F00BAE903 /* NTESSettingPortraitInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC8FC0F1EF37A1F00BAE903 /* NTESSettingPortraitInfoCell.m */; };
+		5FC8FC131EF3C2EA00BAE903 /* QrCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC8FC121EF3C2EA00BAE903 /* QrCodeView.m */; };
 		5FC984EF1EEE1BA20058E115 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC984EE1EEE1BA20058E115 /* WebViewController.m */; };
 		610B1E021AFDDE04006454EA /* video_connect_chat_tip_sender.aac in Resources */ = {isa = PBXBuildFile; fileRef = 610B1DFB1AFDDE04006454EA /* video_connect_chat_tip_sender.aac */; };
 		610B1E041AFDDE04006454EA /* video_chat_tip_HangUp.aac in Resources */ = {isa = PBXBuildFile; fileRef = 610B1DFD1AFDDE04006454EA /* video_chat_tip_HangUp.aac */; };
@@ -230,6 +231,8 @@
 		5FB89A031EE794C000485DF3 /* FindViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FindViewController.xib; path = Find/FindViewController.xib; sourceTree = "<group>"; };
 		5FC8FC0E1EF37A1F00BAE903 /* NTESSettingPortraitInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTESSettingPortraitInfoCell.h; sourceTree = "<group>"; };
 		5FC8FC0F1EF37A1F00BAE903 /* NTESSettingPortraitInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTESSettingPortraitInfoCell.m; sourceTree = "<group>"; };
+		5FC8FC111EF3C2EA00BAE903 /* QrCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QrCodeView.h; path = Profile/View/QrCodeView.h; sourceTree = "<group>"; };
+		5FC8FC121EF3C2EA00BAE903 /* QrCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QrCodeView.m; path = Profile/View/QrCodeView.m; sourceTree = "<group>"; };
 		5FC984ED1EEE1BA20058E115 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebViewController.h; path = Find/View/WebViewController.h; sourceTree = "<group>"; };
 		5FC984EE1EEE1BA20058E115 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebViewController.m; path = Find/View/WebViewController.m; sourceTree = "<group>"; };
 		610037311D9290170095C53B /* NIMDev.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = NIMDev.entitlements; sourceTree = "<group>"; };
@@ -661,6 +664,8 @@
 		5F5E59C51EE7E11C00645EAE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5FC8FC111EF3C2EA00BAE903 /* QrCodeView.h */,
+				5FC8FC121EF3C2EA00BAE903 /* QrCodeView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -1791,6 +1796,7 @@
 				61775E931C571FE500C1DA03 /* NTESLiveActionView.m in Sources */,
 				61E4713B1B7D963E00F4A1BF /* NTESSessionChartletContentView.m in Sources */,
 				619586811C19717B00858434 /* NTESChatroomListViewController.m in Sources */,
+				5FC8FC131EF3C2EA00BAE903 /* QrCodeView.m in Sources */,
 				61E471941B7D96AA00F4A1BF /* NTESService.m in Sources */,
 				61E470F61B7D963E00F4A1BF /* NTESColorButtonCell.m in Sources */,
 				61518A561CA233BB0061C4A9 /* NTESDemoService.m in Sources */,
